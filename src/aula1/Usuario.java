@@ -1,10 +1,7 @@
-package teste;
+package aula1;
 import java.util.Scanner;
 import java.util.logging.Logger;
-/**
- *
- * @author aluno
- */
+
 public class Usuario {
     private int id;
     private String nome;
