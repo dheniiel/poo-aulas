@@ -22,7 +22,6 @@ public class App {
 
             switch (opc) {
                 case 1:
-                    while(reposta == "S"){
                         System.out.print("\n\nDigite o nome do usuário: ");
                         String nome = scan.nextLine();
                         conta1.setNome(nome);
@@ -39,7 +38,7 @@ public class App {
                         
                         System.out.println("Deseja depositar novamente?");
                         String respota = scan.nextLine();
-                    }
+                    
                     break;
 
                 case 2:
