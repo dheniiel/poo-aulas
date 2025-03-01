@@ -28,21 +28,15 @@ public class App {
                     System.out.println("\nCÁLCULO DE IMC");
 
                     System.out.print("Digite o nome da pessoa: ");
-                    String nome = scan.nextLine();
+                    pessoa.setNome(scan.nextLine());
                     System.out.print("\nDigite o CPF:  ");
-                    String cpf = scan.nextLine();
+                    pessoa.setCpf(scan.nextLine());
                     System.out.print("\nDigite o peso: ");
-                    float peso = scan.nextFloat();
-                    scan.nextLine();
+                    pessoa.setPeso(scan.nextFloat());
                     System.out.print("\nDigite a altura: ");
-                    float altura = scan.nextFloat();
-                    scan.nextLine();
+                    pessoa.setAltura(scan.nextFloat());
 
-                    pessoa.setNome(nome);
-                    pessoa.setCpf(cpf);
-                    pessoa.setPeso(peso);
-                    pessoa.setAltura(altura);
-                    float imc = calculo.calcularIMC(peso, altura);
+                    float imc = calculo.calcularIMC(pessoa);
 
                     System.out.println("-------------------------------");
                     System.out.println("Ficha técnica: ");
