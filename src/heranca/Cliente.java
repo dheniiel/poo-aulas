@@ -6,6 +6,11 @@ package heranca;
  */
 public class Cliente extends Pessoa {
 
+    public Cliente(String cpf, String nome, String idade, String endereco) {
+        super(nome, idade, endereco);
+        this.cpf = cpf;
+    }
+    
     private String cpf;
 
     public String getCpf() {

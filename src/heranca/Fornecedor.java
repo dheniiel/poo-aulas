@@ -6,6 +6,11 @@ package heranca;
  */
 public class Fornecedor extends Pessoa {
 
+    public Fornecedor(String cnpj, String nome, String idade, String endereco) {
+        super(nome, idade, endereco);
+        this.cnpj = cnpj;
+    }
+    
     private String cnpj;
 
     public String getCnpj() {
