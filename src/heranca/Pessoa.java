@@ -6,12 +6,14 @@ package heranca;
  */
 public class Pessoa {
 
-    private String nome, idade, endereco;
+    private String nome, idade, endereco, etnia, sexo;
 
-    public Pessoa(String nome, String idade, String endereco) {
+    public Pessoa(String nome, String idade, String endereco, String etnia, String sexo) {
         this.nome = nome;
         this.idade = idade;
         this.endereco = endereco;
+        this.etnia = etnia;
+        this.sexo = sexo;
     }
 
     public Pessoa() {
@@ -41,4 +43,21 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
+    public String getEtnia() {
+        return etnia;
+    }
+
+    public void setEtnia(String etnia) {
+        this.etnia = etnia;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    
 }
