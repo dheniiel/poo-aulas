@@ -5,18 +5,16 @@ package aula3;
  * @author aluno
  */
 public class Animal {
-
-    float tamanho;
-    String cor;
+     float tamanho;
+     String cor;
 
     public Animal(Float tamanho, String cor) {
         this.tamanho = tamanho;
         this.cor = cor;
     }
-
-    Animal() {
+    
+    Animal(){
     }
-
     public float getTamanho() {
         return tamanho;
     }
@@ -32,9 +30,9 @@ public class Animal {
     public void setCor(String cor) {
         this.cor = cor;
     }
-
-    public void comer(String comida) {
+    
+    public void comer(String comida){
         System.out.println(comida);
-    }
-
+    }   
+    
 }
