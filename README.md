@@ -73,16 +73,4 @@ No Windows (PowerShell), compile com:
 javac -d out (Get-ChildItem -Recurse src -Filter *.java).FullName
 ```
 
-## Pontos de atenção
-
-Problemas conhecidos no código, úteis como exercício de correção:
-
-- **`NotaAluno.Nota`**: o vetor `alunos` é criado, mas os objetos não são instanciados (`alunos[i] = new Aluno()`), o que gera `NullPointerException`.
-- **`aula2.App`**: a opção 2 deposita em `conta1` em vez de `conta2`.
-- **`aula3.Main`**: o tamanho do leão recebe `tamanhoCav` em vez de `tamanhoLeao`.
-- **`IMC.App`**: o retorno de `verificarIMC()` não é exibido; falta um `System.out.println(...)`.
-- O diretório `build/` (arquivos `.class`) está versionado; o ideal é ignorá-lo com um `.gitignore`.
-
-## Autor
-
 **Dheniel** — [@dheniiel](https://github.com/dheniiel)
